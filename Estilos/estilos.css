@@ -1,0 +1,367 @@
+body{
+    font-family: 'New Tegomin', serif;
+    margin:0px;
+    padding:0px;
+}
+
+p{
+    font-size:20px;
+}
+
+li{
+    list-style:none;
+    margin-right: 25px;
+}
+
+.menu{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.lista{
+    display:flex;
+}
+
+.titular{
+    text-align: center;
+    margin-top:150px;
+}
+
+h1{
+    font-size:60px;
+    margin:0px;
+}
+
+h2{
+    font-size:25px;
+    margin-bottom:40px;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    font-size:14px;
+    background:#5cb8ff;
+    padding:20px 30px 20px 30px;
+}
+
+header{
+    background:url(../img/fondo.png);
+    height:100vh;
+    background-size:cover;
+}
+
+.contenedor{
+    max-width: 1280px;
+    width:90%;
+    margin:auto;
+}
+
+/* ESTILOS SOBRE MI*/
+
+h3{
+    font-size: 55px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.contenedor-sobremi{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor-parrafo-boton{
+    width: 40%;
+    text-align: center;
+}
+
+.contenedor-parrafo-boton p{
+    font-size: 18px;
+}
+
+.contenedor-parrafo-boton a{
+    display:inline-block;
+    margin-top:20px;
+}
+
+.imagen-mia{
+    width:200px
+}
+
+/*estilos de servicios*/
+
+.contenedor-servicios{
+    /*Pone los elementos uno a lado de otro*/
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.servicio{
+    width: 25%;
+    padding:28px;
+    /*Para redondear bordes*/
+    border-radius: 10px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.morado{
+    background-color:rgb(153, 70, 153) ;
+
+}
+
+.azul{
+    background-color:rgb(26, 26, 165);
+}
+
+.servicio h4{
+    font-size: 30px;
+    margin: 0px;
+}
+
+.servicio img{
+    float: right;
+}
+
+.servicio p{
+    font-size: 18px;
+    height: 200px;
+}
+
+/*Termina estilos de servicios*/
+span{
+    font-size: 70px;
+    color: blue;
+}
+
+.owl-nav{
+    text-align: center;
+}
+
+/*Termina estilos carrucel de imagenes*/
+
+
+.contenedor-porque{
+    display: flex;
+    text-align: center;
+    justify-content:space-around;
+}
+
+.contenedor-porque h4{
+    margin: 0px;
+    font-size: 20px;
+}
+
+.contenedor-porque p{
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.porque{
+    width: 27%;
+}
+
+/*Termina estilos de porque trabajar conmigo*/
+
+#blog{
+    background-color: rgb(241, 245, 245);
+    padding-top:50px;
+    padding-bottom: 50px;
+
+}
+
+#blog img{
+    width: 100%;
+}
+
+#blog h4{
+    font-size: 25px;
+    margin: 0px;
+    padding:20px;
+    text-align: center;
+}
+
+#blog p{
+    line-height: 24px;
+    font-size: 16px;
+    padding: 10px 20px 20px 20px;
+    margin: 0px;
+}
+
+#blog a{
+    display: inline-block;
+    margin-left:20px;
+    
+}
+
+
+.contenedor-blog{
+    display:flex;
+    justify-content: space-around;
+}
+
+.publicacion{
+    width: 30%;
+    box-shadow: 1px 1px 14px #ccc;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/*Termino estilos del Blog*/
+
+#que-esperas{
+    background:linear-gradient(rgba(84,93,220,.94),rgba(96,171,245,.9));
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+}
+
+#que-esperas h3{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+#que-esperas a{
+    padding: 15px 45px 15px 45px;
+    transition:1s;
+
+}
+
+#que-esperas a:hover{
+    color: black;
+    /*para hacer mas suave la animacion del cambio de color de letras*/
+    transition:1s;
+    /*EL elemento se agranda
+    transform: scale(1.1);
+    display: inline-block;*/
+}
+
+/*Termino de estilos que esperas*/
+
+#whatsapp a{
+background:none;
+position: fixed;
+top:85%;
+right: 1%;
+}
+
+#whatsapp img{
+    height: 50px;
+}
+
+.icono-menu{
+    display: none;
+}
+
+/*Termina estilos del boton de whatsapp*/
+
+@media(max-width:800px){
+    /*SOLO SE APLICARAN ESTOS ESTILOS A DISPOSITIVOS DE 480 DE ANCHO HACIA ABAJO*/
+    nav{
+        position: absolute;
+        top:60px;
+        left:0px;
+        background: #5cb8ff;
+        width: 100%;
+        display: none;
+    }
+
+    nav .lista{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icono-menu{
+        display: block;
+        width: 30px;
+    }
+
+    .titular{
+        margin-top: 50px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 20px;
+    }
+
+    .contenedor-sobremi{
+        flex-direction: column;
+    }
+
+    .contenedor-parrafo-boton {
+        width: 82%;
+    }
+    .contenedor-servicios {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .servicio {
+        width: 85%;
+    } 
+
+    h3{
+        font-size: 50px;
+    }
+
+    .contenedor-porque{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .porque{
+        width:98%;
+    }
+
+    .contenedor-blog{
+        display: flex;
+        flex-direction: column;
+    }
+    .publicacion{
+        width: 98%;
+    }
+
+    #blog{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #whatsapp a{
+        right: -5%;
+    }
+
+}
+
+@media(min-width:700px) and (max-width:900px){
+
+    header{
+        height: 50vh;
+    }
+
+    .contenedor-parrafo-boton p {
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .servicio{
+        width:90%;
+    }
+
+    .porque {
+        width: 76%;
+        margin: auto;
+    }
+
+    .publicacion {
+        width: 77%;
+        margin: auto;
+    }
+
+
+
+}
